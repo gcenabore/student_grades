@@ -19,6 +19,18 @@ def get_student_grade():
             elif 88 <= grade_input < 91:
                 print("PASSED: GPA is 1.75")
 
+            elif 85 <= grade_input < 88:
+                print("PASED: GPA is 2.00")
+            
+            elif 82 <= grade_input < 85:
+                print("PASSED: GPA is 2.25")
+            
+            elif 79 <= grade_input < 82:
+                print("PASSED: GPA is 2.5")
+            
+            elif 76 <= grade_input < 79:
+                print("PASSED: GPA is 2.75")
+            
     except ValueError:
         print("ERROR: Grade must be Digit only")
 
