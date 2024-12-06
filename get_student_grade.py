@@ -39,7 +39,8 @@ def get_student_grade():
         
             else:
                 print("FAILED: DROPPED")
-                
+        else:
+            print("INVALID: Enter a grade from 50-100 only.")
     except ValueError:
         print("ERROR: Grade must be Digit only")
 
