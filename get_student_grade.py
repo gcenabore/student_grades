@@ -8,39 +8,43 @@ def get_student_grade():
         if 50 <= grade_input <= 100:
 
             if grade_input >= 97:
-                print("PASSED: GPA is 1.00")
+                result = "PASSED - 1.00"
             
             elif 94 <= grade_input <97:
-                print("PASSED: GPA is 1.25")
+                result = "PASSED - 1.25"
             
             elif 91 <= grade_input < 94:
-                print("PASSED: GPA is 1.5")
+                result = "PASSED - 1.5"
 
             elif 88 <= grade_input < 91:
-                print("PASSED: GPA is 1.75")
+                result = "PASSED - 1.75"
 
             elif 85 <= grade_input < 88:
-                print("PASED: GPA is 2.00")
+                result = "PASSED - 2.00"
             
             elif 82 <= grade_input < 85:
-                print("PASSED: GPA is 2.25")
+                result = "PASSED - 2.25"
             
             elif 79 <= grade_input < 82:
-                print("PASSED: GPA is 2.5")
+                result = "PASSED - 2.5"
             
             elif 76 <= grade_input < 79:
-                print("PASSED: GPA is 2.75")
+                result = "PASSED - 2.75"
 
             elif 75 <= grade_input < 76:
-                print("PASSED GPA is 3.00")
+                result = "PASSED - 3.00"
 
             elif grade_input < 75:
-                print("FAILED: GPA is 5.00")
+                result = "FAILED - 5.00"
         
             else:
-                print("FAILED: DROPPED")
+                return None
+            
+            print(f"Your Grade is equivalent to {result}")
+    
         else:
             print("INVALID: Enter a grade from 50-100 only.")
+            
     except ValueError:
         print("ERROR: Grade must be Digit only")
 
